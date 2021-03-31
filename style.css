@@ -3,7 +3,14 @@ margin: 0;
 
 }
 @font-face {
-
+font-family: "OpenSans"; 
+src: url("font/OpenSans-Bold.ttf"); 
+font-style: bold; 
+font-weight: normal; 
+font-family: "OpenSans"; 
+src: url("font/OpenSans-Light.ttf"); 
+font-style: light; 
+font-weight: normal;
 font-family: "OpenSans"; 
 src: url("font/OpenSans-Regular.ttf")format("truetype"); 
 font-style: normal; 
@@ -111,7 +118,9 @@ white-space: nowrap;
 
 }
 form input{
-height: 95%;
+height: 44px;
+position: relative;
+top: -1px;
 width:85%;	
 border:1px solid #D4D4D4;
 border-radius: 4px;
@@ -122,18 +131,25 @@ input::placeholder{
 	color: black;
 	opacity: 0.4;
 	font-size: 14px;
-	padding-left: 11px;	
-}
+	position: relative;
+	left: 13px;
+	top: 1px;	
+	letter-spacing: 1px;
+	font-weight: 400;}
 form button{
-height: 101%;
+height: 100%;
 width:13.5%;	
 position: relative;
-left: -5px;
-top: 6px;
+left: -6px;
+top: 5px;
 background: #E0001B;
 border: none;
 border-radius: 0 3px 3px 0;
 }	 
+form button img{
+	position: relative;
+	top: 2px;
+}
 form button:hover{
 	background: rgba(235, 78, 97, 1);
 
@@ -144,6 +160,7 @@ form button:hover{
 	position: relative;
 	top: -5px;
 	width: auto;
+	font-style: bold;
 }
 .buttons ul{
 list-style: none;
@@ -162,6 +179,8 @@ color: black;
 text-decoration: none;
 padding: 16px;
 height: 80%;
+font-size: 14px;	
+font-style: bold;
 
 }
 .buttons a:hover
@@ -173,21 +192,39 @@ background: #F8F8F8;
 }
 .buttons a img{
 margin-right: 15px;
-width: 25px;
+width: 24px;
+position: relative;
+top: -1px;
+left: -1px;
 
 }
 .notify
 {
-margin-left: 10px;
+margin-left: 16px;
+margin-right: 3px;
 background: #E0001B;
-width:15px;
-height:15px;
+width:17px;
+height:17px;
 border-radius: 50%;
 text-align: center;
 color: white;
 font-size: 12px;
+vertical-align: center;
 } 
-
+.buttons ul li:nth-child(2) a
+{	
+	position: relative;
+	left: -3px;
+	top: 2px;	
+} 
+.buttons ul li:nth-child(2) a img
+{
+	width:27px;
+height:24px;
+position: relative;
+top: -3px;
+left: 1px;
+} 
 .header-nav{
 /* position: relative; */
 list-style: none;	
@@ -208,6 +245,10 @@ padding: 0;
 	align-items: center;
 	font-size: 15px;	
 }
+ a ~ ol:hover{
+ 	background: red;
+ 	color: red;
+ }
 .header-nav li a{
 	color: black;
 	text-decoration: none;
@@ -223,7 +264,7 @@ padding: 0;
 
 	background: rgba(224, 0, 27, 1);
 	border-radius: 3px 0 0 3px;
-	width: 136px;
+	width: 141px;
 	position: relative;
 	left: -3px;
 	top: 0;
@@ -231,10 +272,11 @@ padding: 0;
 }
 .header-nav li:first-child a{
 color: white;
-
+letter-spacing: 1px;
+font-style: light;
 }
 .header-nav li:nth-child(2){
-	width: 200px;
+	width: 210px;
 	background: #fafafa;
 	white-space: nowrap;
 	font-size: 14px;
@@ -246,18 +288,29 @@ color: white;
  position: relative;
  top: 3px;	
 }
+.header-nav li:nth-child(2) a{
+position: relative;
+top: -1px;
+left: -4px;	
+
+}
 .header-nav li:nth-child(3){
-	width: 194px;
+	width: 215px;
 	white-space: nowrap;
 	font-size: 14px;
 	background: #f5f5f5
 }
 .header-nav li:nth-child(3) img{
 	margin: 0;
-	margin-left: 25px;
+	margin-left: 22px;
 	margin-right: 8px;
  position: relative;
  top: 3px;	
+ top: 2px;
+}
+.header-nav li:nth-child(3) a{
+position: relative;
+left: 3px;
 }
 .header-nav li:nth-child(4){
 	width: 200px;
@@ -286,20 +339,22 @@ color: white;
  top: 3px;	
 }
 .header-nav li:nth-child(6){
-	width: 19%;
+	width: 180px;
 	background: #fafafa;
 	white-space: nowrap;
 	font-size: 14px;
 	box-shadow: -9px 0 0 -8px #d1d1d1;
+	border-radius: 0 3px 3px 0;
 		
 }
 .header-nav li:nth-child(6) img{
 	margin: 0;
-	margin-left: 25px;
+	margin-left: 20px;
 	margin-right: 8px;
  position: relative;
  top: 3px;	
 }
 .header-nav li:nth-child(6) a{
 color: #E0001B;
+font-style: bold;
 }
