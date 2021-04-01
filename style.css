@@ -1,216 +1,247 @@
-body{
-margin: 0;
-
-}
-@font-face {
-font-family: "OpenSansbold"; 
-src: url("font/OpenSans-Bold.ttf") format("truetype"); 
-font-style: normal; 
-font-weight: normal; 
-}
-@font-face {
-font-family: "OpenSans"; 
-src: url("font/OpenSans-Light.ttf") format("truetype"); 
-font-style: light; 
-font-weight: normal;
-}
-@font-face {
-font-family: "OpenSans"; 
-src: url("font/OpenSans-Regular.ttf")format("truetype"); 
-font-style: normal; 
-font-weight: normal; 
-} 
-body{
-font-family: "OpenSans";
-font-size: 14px;
-
-}
-.header-info{	
-background: #F8F8F8;
-font-size: 12px;
-font-weight: normal;
-height: 36px;
-}
-.center{
-overflow: visible;
-margin-left: auto;	
-margin-right: auto;
-width: 58%;
-position: relative;
-}
-.geo{	
-
-	display: block;	
-	padding-top: 10px;	
-	padding-left: 1px;
-	color:  #1D1D1B;
-
-}
-.geo p, .geo img
+*
 {
-float: left;
-}	
-.geo p{
-	margin-top: -1px;
-	margin-left: 12px;
-	color:  #1D1D1B;
-
+	outline: none;
 
 }
-.header-top{
-	list-style: none;
-	display: flex;
-	padding:0;
+body
+{
 	margin: 0;
-	margin-left: 189px;
-	margin-top: -1px;
 
 }
-.header-top a{
-	text-decoration: none;
-	color: black;
+
+@font-face 
+{
+	font-family: "OpenSansbold"; 
+	src: url("font/OpenSans-Bold.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
 }
-.header-top li{
-	padding-right: 24px;
+@font-face 
+{
+	font-family: "OpenSans"; 
+	src: url("font/OpenSans-Light.ttf") format("truetype"); 
+	font-style: light; 
+	font-weight: normal;
 }
-.header-top li img{
-	padding-left: 11px;
-	padding-right: 2px;
-	margin-bottom: 3px;	
-}
- .contact{
-float: right; 
-position: absolute	;	
-left: 81.3%;										
-top:  9px;	
-color:#696969;
-text-decoration: none;
+@font-face 
+{
+	font-family: "OpenSans"; 
+	src: url("font/OpenSans-Regular.ttf")format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
 } 
+body
+{
+	font-family: "OpenSans";
+	font-size: 14px;
+}
+.header-info
+{
+	display: flex;
+	justify-content: center;	
+	background: #F8F8F8;
+	font-size: 12px;
+	font-weight: normal;
+	height: 36px;
+}
+.center
+{
+	display: flex;
+	justify-content: space-between;
+	width: 58%;
+	height: 100%;
+	overflow: visible;
+	align-items: center;
+	margin-top: 1px;
+}
+.geo
+{
+	display: flex;	
+	color:  #1D1D1B;
+	text-decoration: none;
+	height: 100%;
+	align-items: center;
+	margin-top: 2px;
+	 
+}
+.geo img
+{
+	padding-right:12px;
+	padding-left: 1px;
+}
+.geo p
+{
+	position: relative;
+	bottom: 1px;
+}
+.header-top
+{
+	list-style: none;
+	display: flex;	
+	width: 59%;
+	align-items: flex-start;
+	margin-left: 2px;
+}
+.header-top li
+{
+	display: flex;
+	align-items: top;
+	margin-right: 25px;
+}
+.header-top a
+{
+	text-decoration: none;
+	color: black; 
+}
+.header-top img
+{
+	margin-left: 10px;
+}
+.contact
+{
+	color:#696969;
+	text-decoration: none;
+	justify-self: flex-end;
+	margin-right: 18px;
+} 
+/* Центр */
+
 .header-center
 {
-		width: 58%;
-height: 110px;
-margin-left: 21%; margin-right: 21%;	
-white-space: nowrap;
+	display: flex;
+	align-items: center;
+	width: 58%;
+	height: 65px;
+	margin-top: 28px;
+	margin-bottom: 19px;
+	margin-left: 21%;
+	margin-right: 21%;	
+	white-space: nowrap;
 }
-.logo {
-	display: inline-block;
-	padding: 0;
-	margin:0;
-	margin-top: 49px;
-	margin-left: -92px;
-	display: inline-block;
-
-}
-
-form.searth{
-display: inline-block;
-margin-left:52px;
-margin-top: 0;
-height: 48px;
-width: 415px;
+.logo 
+{
 position: relative;
-top: -10px;
-white-space: nowrap;
+right: 3px;	
+height: 20px;
+margin-right: 53px;
+}
+
+form.searth
+{
+	margin-left:0;
+	margin-top:0;
+	height: 48px;
+	white-space: nowrap;
+
 
 }
-form.searth input{
-height: 44px;
-position: relative;
-top: -1px;
-width:85%;	
-border:1px solid #D4D4D4;
-border-radius: 4px;
-color: black;
+form.searth input
+{
+	height: 93%;
+	position: relative;
+	width:330px;	
+	padding-left: 20px;
+	border:1px solid #D4D4D4;
+	border-radius: 4px;
+	vertical-align: top;
 
 }
-input::placeholder{
+input::placeholder
+{
 	color: black;
 	opacity: 0.4;
 	font-size: 14px;
-	position: relative;
-	left: 13px;
-	top: 1px;	
 	letter-spacing: 1px;
-	font-weight: 400;}
-form.searth button{
-height: 100%;
-width:13.5%;	
-position: relative;
-left: -6px;
-top: 5px;
-background: #E0001B;
-border: none;
-border-radius: 0 3px 3px 0;
+	font-weight: 400;
+}
+form.searth button
+{
+	margin-left: 0px;
+	height: 100%;
+	width:14.5%;	
+	position: relative;
+	left: -6px;
+	background: #E0001B;
+	border: none;
+	border-radius: 0 3px 3px 0;
 }	 
-form.searth button img{
-	position: relative;
-	top: 2px;
+form.searth button img
+{
+
 }
-form.searth button:hover{
+form.searth button:hover,
+form.searth button:focus
+{
 	background: rgba(235, 78, 97, 1);
-
-
 }
-.buttons li{
 
-}
-.buttons{
-	display: inline-block;	
-	position: relative;
-	top: -5px;
+.buttons
+{	
+	margin-left: 20px;
 	width: auto;
-	font-style: bold;
 }
-.buttons ul{
-list-style: none;
- display: flex;
-align-items: center;
- 
+.buttons ul
+{
+	list-style: none;
+	display: flex;
+	align-items: center;	 
 }
 
-.buttons li a{
-display:  flex;
-
+.buttons li a
+{
+	display:  flex;	
+ border-radius: 5px;
 }
 .buttons a
 {
-color: black;
-text-decoration: none;
-padding: 16px;
-height: 80%;
-font-size: 14px;	
-font-style: bold;
-
+	color: black;
+	text-decoration: none;
+	padding: 16px;
+	height: 80%;
+	font-size: 15px;	
+	font-style: bold;
 }
-.buttons a:hover
+.buttons a:hover,
+.buttons a:focus
 {
-
-background: #F8F8F8;
-
-
+	background: #F8F8F8;
 }
-.buttons a img{
-margin-right: 15px;
-width: 24px;
-position: relative;
-top: -1px;
-left: -1px;
-
+.buttons a img
+{
+	margin-right: 15px;
+	width: 24px;
 }
 .notify
 {
-margin-left: 16px;
-margin-right: 3px;
-background: #E0001B;
-width:17px;
-height:17px;
-border-radius: 50%;
-text-align: center;
-color: white;
-font-size: 12px;
-vertical-align: center;
+	margin-left: 10px;
+	margin-right: 3px;
+	background: #E0001B;
+	width:17px;
+	height:17px;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: center;
+	color: white;
+	font-size: 12px;
 } 
+
+.buttons ul li:nth-child(1) a
+{	
+	position: relative;
+	left: 0px;
+	top: -2px;
+}
+.buttons ul li:nth-child(1) a img
+{
+	position: relative;
+	top: 1px;
+}
+.buttons ul li:nth-child(1) a .notify
+{
+position: relative;
+left: 5px;
+top: 2px;
+}
 .buttons ul li:nth-child(2) a
 {	
 	position: relative;
@@ -220,25 +251,27 @@ vertical-align: center;
 .buttons ul li:nth-child(2) a img
 {
 	width:27px;
-height:24px;
-position: relative;
-top: -3px;
-left: 1px;
-} 
- .header-nav{
-list-style: none;	
-width: 58%;
-margin-left:auto;
-margin-right: auto;
-display: flex;
-align-items: center;
-justify-content: flex-start;	
-margin-top: 0;	
-padding: 0;	
+	height:24px;
+	position: relative;
+	top: -3px;
+	left: 1px;
 }
-.header-nav li{
+
+/* Нижнаяя часть хедера */
+.header-nav
+{
+	display: flex;
+	align-items: center;
+	padding:0;
+	justify-content: flex-start;	
+	list-style: none;	
+	width: 58%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.header-nav li
+{
 	display: block;
-	width: 200px;
 	height: 48px;
 	display: flex;
 	align-items: center;
@@ -267,7 +300,7 @@ padding: 0;
 
 	background: rgba(224, 0, 27, 1);
 	border-radius: 3px 0 0 3px;
-	width: 141px;
+	width: 136px;
 	position: relative;
 	left: -3px;
 	top: 0;
@@ -279,7 +312,7 @@ letter-spacing: 1px;
 font-style: light;
 }
 .header-nav li:nth-child(2){
-	width: 210px;
+	width: 202px;
 	background: #fafafa;
 	white-space: nowrap;
 	font-size: 14px;
@@ -289,7 +322,7 @@ font-style: light;
 	margin-left: 25px;
 	margin-right: 8px;
  position: relative;
- top: 3px;	
+ top: 1px;	
 }
 .header-nav li:nth-child(2) a{
 position: relative;
@@ -298,7 +331,7 @@ left: -4px;
 
 }
 .header-nav li:nth-child(3){
-	width: 215px;
+	width: 194px;
 	white-space: nowrap;
 	font-size: 14px;
 	background: #fafafa;
@@ -316,7 +349,7 @@ position: relative;
 left: 3px;
 }
 .header-nav li:nth-child(4){
-	width: 200px;
+	width: 205px;
 	background: #fafafa;
 	white-space: nowrap;
 	font-size: 14px;	
@@ -329,7 +362,7 @@ left: 3px;
  top: 3px;	
 }
 .header-nav li:nth-child(5){
-	width: 210px;
+	width: 205px;
 	background: #fafafa;
 	white-space: nowrap;
 	font-size: 14px;
@@ -342,7 +375,7 @@ left: 3px;
  top: 3px;	
 }
 .header-nav li:nth-child(6){
-	width: 180px;
+	width: 178px;
 	background: #fafafa;
 	white-space: nowrap;
 	font-size: 14px;
